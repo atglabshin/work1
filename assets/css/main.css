@@ -1,0 +1,308 @@
+
+.sc-visual{
+}
+.sc-visual .main-slide{
+  height: calc(100vh - 140px);
+  min-height: 430px;
+}
+.sc-visual .main-slide a{}
+.sc-visual .main-slide a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sc-visual .main-slide .text-box{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding:97px 35px;
+  color: #fff;
+}
+.sc-visual .main-slide .text-box .title{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: -1.3px;
+}
+.sc-visual .main-slide .text-box .desc{
+  font-weight: 400;
+  padding-top: 15px;
+  font-size: 17px;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+/* swiper pagination 꾸미기 */
+.sc-visual .main-slide .pagination{display: flex; justify-content: center; position: absolute; bottom: 37px; z-index: 1; }
+.sc-visual .main-slide .swiper-pagination-bullet{ width: 20px; height: 2px; background: #fff; border-radius: 0; margin: 0; }
+
+/* 모든 제품 */
+.prd-list{ }
+.prd-list .prd-item{}
+.prd-list .prd-item a{display: block;}
+.prd-list .prd-item .img-box{ position: relative; }
+.prd-list .prd-item .img-box .badge{
+  position: absolute;
+  top: 0;left: 0; 
+display: flex;}
+.prd-list .prd-item .img-box .badge .num{
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+}
+.prd-list .prd-item .img-box .prd-img{ width: 100%; }
+.prd-list .prd-item .img-box .new{ 
+  width: 37px; 
+ }
+
+.prd-list .prd-item .text-box{ padding: 15px 14px 40px; }
+.prd-list .prd-item .text-box .review{ display: block; width: 100%; font-size: 13px; line-height: 13px; font-weight: 600; color: #8e1f29; }
+.prd-list .prd-item .text-box .desc{ display: block; width: 100%; padding: 10px 0; font-size: 13px; font-weight: 400; letter-spacing: -0.05em; }
+
+.prd-list .prd-item .text-box .price{ font-size: 15px; line-height: 16px; font-weight: 500; }
+.prd-list .prd-item .text-box .price .discount{ color: #8E1F29; font-weight: 500; margin-right: 5px; }
+.prd-list .prd-item .text-box .price .curr{ }
+.prd-list .prd-item .text-box .price .ori{ font-size: 13px; line-height: 18px; font-weight: 400; color: #8d8d8d ; margin-left: 5px; text-decoration: line-through; }
+.prd-list .prd-item .text-box .etc{ flex-wrap:wrap; display: flex; gap: 5px; margin: 10px 0;}
+.prd-list .prd-item .text-box .etc span{ border: 1px solid #8E1F29; color: #8E1F29; padding: 4px 6px; font-size: 10px; line-height: 10px; font-weight: 500;}
+
+/* list1 */
+.prd-list.list1{ display: flex; flex-wrap: wrap; gap: 10px;}
+.prd-list.list1 .prd-item{ width: calc(50% - 5px); }
+
+/* list2 */
+.prd-list.list2{ padding: 0 16px;}
+.prd-list.list2 .prd-item{ padding: 14px 0;width: 100%;}
+.prd-list.list2 .prd-item+.prd-item{ border-top: 1px solid #eee; }
+.prd-list.list2 .prd-item a{ display: flex; }
+.prd-list.list2 .prd-item .img-box{ width: 110px; }
+
+
+/* sc-prd  tab menu*/
+.sc-prd{}
+.sc-prd h2{
+  text-align:center;
+  padding: 50px 16px 22px;
+  font-size: 20px;
+  line-height: 29px;
+  color: #212326;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+}
+.sc-prd .group-nav{
+  margin-bottom: 22px;
+  padding: 0 2px;
+}
+
+.sc-prd .nav-list{
+  display: flex;  
+}
+.sc-prd .nav-item .nav{
+  padding: 8px 13px 9px 12px;
+  /* font-weight: 500;
+  font-size: 15px;
+  color: #77797E;
+  line-height: normal; */
+
+  font-size: 16px;
+  margin-right: 10px;
+  line-height: 23px;
+  letter-spacing: -0.05em;
+  color: #333;
+  font-weight: 400;
+}
+.sc-prd .nav-list .nav.active {
+  font-weight: 700;
+  color: #FFFFFF;
+  background: #B75622;
+  border-radius: 60px;
+ }
+.sc-prd .content{}
+.sc-prd .content .new{left: 0;}
+.sc-prd .content .cont{ display: none; }
+.sc-prd .content .cont.active{ display: block; }
+.sc-prd .link-more{ 
+  text-align: center; margin: 0 16px; 
+  margin-bottom: 48px; padding: 18px 0 17px 0; 
+  border: 1px solid #C8CBD2; 
+  border-radius: 6px; 
+  display: block; 
+  font-weight: 500; 
+  font-size: 14px; 
+  letter-spacing: -0.04em; 
+  position: relative; }
+.sc-prd .link-more .orange{
+  color: #C86733;
+}
+.sc-prd .link-more::after{
+  content: '';
+  position: absolute;
+  margin-top: -2px;
+  background: url(../images/btn-right-arrow.png);
+  width: 16px; height: 17px;
+}
+.sc-coupon{width: 100%;margin-bottom: 20px;}
+
+/* sc-theme */
+.sc-theme .group-theme{
+}
+.sc-theme .group-theme a{}
+.sc-theme .group-theme .text-box{
+  padding: 20px 16px;
+}
+.sc-theme .group-theme .text-box .title{
+  font-size: 26px;
+  line-height: 35px;
+  color: #212326;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+}
+.sc-theme .group-theme .text-box .desc{
+    padding: 14px 0 18px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    color: #212326;
+    font-weight: 400;
+}
+.sc-theme .group-theme .text-box .go{
+  display: inline-block;
+  background-color: #1e1e1e;
+  border-radius: 2px;
+  border: 1px solid #1e1e1e;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 8px 47px 8px 18px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  background-image: url(../images/box-rightarrow.png);
+  background-repeat: no-repeat;
+  background-size: 15px auto;
+  background-position: calc(100% - 18px) center; /*여기 여기 질문사항*/
+}
+
+/* banner2 */
+.sc-brand{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 56px 20px;
+  background-color: #C86733;
+}
+.sc-brand a{
+  color: #fff;
+}
+
+.sc-brand h4{
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  margin: 0 auto 10px;
+  font-weight: 400;
+  display: inline-block;
+  border-bottom: 1.5px solid #fff;
+  padding-bottom: 5px;
+  line-height: 1.2;
+}
+.sc-brand strong{
+  display: block;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+.sc-brand p{
+  padding: 10px 0 5px;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+.sc-brand .link-detail{
+  display: inline-block;
+  width: 100px;
+  margin-top: 20px;
+  padding: 10px 0;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+}
+
+
+
+
+/* btn */
+.sc-newitem .common-inner .link-more{
+  display: block;
+  padding: 18px 0 17px 0;
+  margin-bottom: 48px;
+  border: 1px solid #C8CBD2;
+  border-radius: 6px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  position: relative;
+}
+.sc-newitem .common-inner .link-more span{
+  color: #C86733;
+}
+.sc-newitem .common-inner .link-more::after{
+  content: '';
+  border: 1px solid #000;
+  position: absolute;
+  width: 16px; 
+  height: 16px;
+  padding-left: 2px;
+  background-image: url(../images/btn-right-arrow.png);
+}
+
+/* 배너 */
+.sc-info{ padding: 80px 20px 74px; }
+.sc-info.membership{ background: url(../images/banner2.jpg) no-repeat center/cover; }
+.sc-info.store{ margin-top: 10px; background: url(../images/banner3.jpg) no-repeat center/cover; }
+.sc-info .text{ }
+.sc-info .text h4{ font-size: 26px; line-height: 31px; font-weight: 700; letter-spacing: -0.02em; color: #fff; }
+.sc-info .text p{ font-size: 15px; line-height: 1.4; font-weight: 400; letter-spacing: -0.02em; color: #fff; padding: 15px 0 30px; box-sizing: border-box; }
+.sc-info .link-detail{ border: 1px solid #fff; padding: 7px 25px 8px; color: #fff; font-size: 15px; line-height: 18px; letter-spacing: -0.03em; /* display: inline-block; */ box-sizing: border-box; }
+
+/* 레깅스 브라탑 세트  */
+.sc-cate{ padding-left: 20px; }
+.sc-cate .group-cate{ position: relative; }
+.sc-cate .group-cate h3{
+  display: inline-block;
+  padding: 30px 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212326;
+  font-weight: 600;
+}
+.sc-cate .group-cate .view-more{
+  position: absolute;
+  top: 40px;
+  right: 5%;
+  padding: 0 5px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.sc-cate .group-cate .view-more .bar{
+    display: inline-block;
+    width: 15px;
+    height: 11px;
+    margin-left: 3px;
+    margin-bottom: 0px;
+    background: url(../images/ic-move.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: center;
+} 
+

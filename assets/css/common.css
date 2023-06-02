@@ -1,0 +1,39 @@
+
+.blind{
+  position: absolute;
+  width: 1px;height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+}
+
+.hidden{
+  overflow: hidden;
+}
+.hidden .dimmed{
+  opacity: 1;
+  visibility: visible;
+}
+.headline{
+  font-size: 20px;
+  font-weight: 700;
+  color: #212326;
+  letter-spacing: -0.05em;
+  line-height: 29px;
+}
+
+.skip-nav{position: relative;z-index: 99;}
+.skip-nav a{
+  position: absolute;
+  width: 100%;
+  left: 0;top: -50px;
+  background: #000;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+.skip-nav a:focus,
+.skip-nav a:active{
+  top: 0;
+}
+
